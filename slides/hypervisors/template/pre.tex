@@ -1,0 +1,34 @@
+%\documentclass[draft,11pt,a4paper,openany, oneside,bibliography=totoc]{scrbook}
+\documentclass[11pt, aspectratio=169, modernfonts]{beamer}
+
+% ---------------------------------------------------------
+% Preamble
+% ---------------------------------------------------------
+\input{template/packages}
+\input{template/settings}
+\input{template/commands}
+\input{template/theme}
+\setbeamerfont{caption}{size=\small}
+\usepackage{lmodern}
+\usepackage{pdfpages}
+
+
+\bibliography{bib}
+
+% ---------------------------------------------------------
+% Document Title
+% ---------------------------------------------------------
+\input{title}
+% ---------------------------------------------------------
+% Pre content
+% ---------------------------------------------------------
+\begin{document}
+    \maketitle
+    \begin{frame}{Outline}
+        \tableofcontents
+    \end{frame}
+% ---------------------------------------------------------
+% Main content
+% ---------------------------------------------------------
+    \input{main}
+\end{document}

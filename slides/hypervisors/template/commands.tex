@@ -1,0 +1,26 @@
+% ---------------------------------------------------------
+% Commands for quicker writing
+% ---------------------------------------------------------
+\newcommand{\xor}{\oplus}
+
+
+
+% Final slide
+% -----------
+% Adds a slide with the specified text. It does not show any header or footer.
+\newcommand{\finalslide}[1]{%
+  \part{} % no section title in footer for this slides
+  \begin{frame}[noframenumbering, plain]
+    \begin{center}
+      \vfill
+      \Huge #1
+      \vfill
+    \end{center}
+  \end{frame}
+}
+
+\newcommand{\commandline}[1]{
+  \vspace{1em}
+  \lstinline[basicstyle=\ttfamily]{$ #1}
+  \vspace{1em}
+}
