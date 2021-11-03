@@ -1,6 +1,6 @@
 \section{Proxmox Virtual Environment}
 
-\begin{frame}{Proxmox Virtual Environment - PVE}
+\begin{frame}[allowframebreaks]{Proxmox Virtual Environment - PVE}
     \begin{columns}
         \begin{column}{0.6\linewidth}
             \begin{itemize}
@@ -8,6 +8,7 @@
                 \item Uses Kernel-based Virtual Machine (KVM) Hypervisor
                 \item Support for clustering multiple server nodes
                 \item Web-based management interface $\rightarrow$ easy to use and many tutorials online
+                \item Installation very easy and similar to normal Linux distros
             \end{itemize}
         \end{column}
         \begin{column}{0.4\linewidth}
@@ -18,6 +19,17 @@
             \end{figure}
         \end{column}
     \end{columns}
+\end{frame}
+
+
+\begin{frame}{Kernel-based Virtual Machine - KVM}
+    \begin{itemize}
+        \item Open-source virtualizing technology
+        \item Integrated in Linux since version 2.6.20 (2007)
+        \item KVM converts Linux to a bare-metal Hypervisor
+        \item Every VM is managed as a regular Linux process
+        \item Requires hardware virtualization support (AMD-V or Intel-VT-x)
+    \end{itemize}
 \end{frame}
 
 \begin{frame}[noframenumbering,allowframebreaks]{Sources}
